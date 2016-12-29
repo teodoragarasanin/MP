@@ -12,10 +12,18 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
     //MARK: Outlets
     
-    @IBOutlet weak var statePicker: UIPickerView!
     
+    @IBOutlet var collection: [UILabel]!
+    @IBOutlet var buttons: [UITextField]!
+    @IBOutlet weak var imageLogo: UIImageView!
+    
+    @IBOutlet weak var separator: UIView!
+    @IBOutlet weak var statePicker: UIPickerView!
     @IBOutlet weak var stateButton: UIButton!
-   
+    @IBOutlet weak var successImageView: UIImageView!
+    
+    @IBOutlet weak var buyNowButton: UIButton!
+    
     //MARK: Properties
     
     let states = ["Alaska", "California", "New York"]
@@ -28,6 +36,23 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
     }
     
+    @IBAction func buyNowButtonPressed(_ sender: UIButton) {
+        successImageView.isHidden = false
+        
+        for label in collection {
+            label.isHidden = true
+        }
+        for button in buttons {
+            button.isHidden = true
+        
+        }
+        imageLogo.isHidden = true
+        separator.isHidden = true
+        stateButton.isHidden = true
+        buyNowButton.isHidden = true
+    }
+  
+
     //MARK: UIPickerViewDelegate
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

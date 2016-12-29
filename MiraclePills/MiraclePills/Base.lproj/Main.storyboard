@@ -122,15 +122,27 @@
                                 </connections>
                             </button>
                             <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3l7-tf-6KF">
-                                <rect key="frame" x="20" y="496" width="374" height="220"/>
+                                <rect key="frame" x="20" y="496" width="374" height="171"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="220" id="9Gq-Cb-Rig"/>
+                                    <constraint firstAttribute="height" constant="171" id="9Gq-Cb-Rig"/>
                                     <constraint firstAttribute="width" constant="374" id="at2-iP-CMs"/>
                                 </constraints>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPu-06-46k">
+                                <rect key="frame" x="101" y="672" width="213" height="45"/>
+                                <state key="normal" image="buyNowBtn"/>
+                                <connections>
+                                    <action selector="buyNowButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="64z-oD-8Cf"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="c0t-wQ-ojR">
+                                <rect key="frame" x="116.66666666666669" y="278.66666666666669" width="180" height="180"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="c0t-wQ-ojR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1bd-Ys-JXc"/>
+                            <constraint firstItem="vPu-06-46k" firstAttribute="top" secondItem="3l7-tf-6KF" secondAttribute="bottom" constant="5" id="2Cj-mT-l6i"/>
                             <constraint firstItem="eku-Ld-fJq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2G2-WJ-7J3"/>
                             <constraint firstItem="scP-B9-U5c" firstAttribute="top" secondItem="z71-IU-HK9" secondAttribute="bottom" constant="8" id="2g4-fQ-Xwt"/>
                             <constraint firstItem="ZE9-M4-lF7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="4h8-Ws-d1L"/>
@@ -148,11 +160,14 @@
                             <constraint firstItem="0Hf-ol-Efa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L2m-R1-RUF"/>
                             <constraint firstItem="dbc-xa-MTx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MpJ-im-kCS"/>
                             <constraint firstItem="dbc-xa-MTx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NZ2-UJ-ByT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vPu-06-46k" secondAttribute="trailing" constant="80" id="Nq2-kZ-hEv"/>
                             <constraint firstItem="3l7-tf-6KF" firstAttribute="top" secondItem="eku-Ld-fJq" secondAttribute="bottom" constant="8" id="OOF-Vy-dRh"/>
                             <constraint firstItem="z71-IU-HK9" firstAttribute="top" secondItem="0Hf-ol-Efa" secondAttribute="bottom" constant="8" id="PfT-dI-GL4"/>
                             <constraint firstItem="nw4-oq-fUk" firstAttribute="top" secondItem="gGE-0x-kuS" secondAttribute="bottom" constant="8" id="RLu-OF-n4T"/>
+                            <constraint firstItem="c0t-wQ-ojR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rse-sh-OVH"/>
                             <constraint firstItem="dbc-xa-MTx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VTw-74-lcK"/>
                             <constraint firstItem="z71-IU-HK9" firstAttribute="top" secondItem="0Hf-ol-Efa" secondAttribute="bottom" constant="8" id="XKq-kx-NRJ"/>
+                            <constraint firstItem="vPu-06-46k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xch-nf-7BQ"/>
                             <constraint firstItem="gGE-0x-kuS" firstAttribute="centerX" secondItem="YFt-r6-tZf" secondAttribute="centerX" id="YgG-OC-C8U"/>
                             <constraint firstItem="cQx-yi-FLN" firstAttribute="top" secondItem="nw4-oq-fUk" secondAttribute="bottom" constant="10" id="aoQ-ZR-o92"/>
                             <constraint firstItem="eku-Ld-fJq" firstAttribute="top" secondItem="scP-B9-U5c" secondAttribute="bottom" constant="8" id="ask-gu-lpH"/>
@@ -164,6 +179,7 @@
                             <constraint firstItem="dbc-xa-MTx" firstAttribute="top" secondItem="cQx-yi-FLN" secondAttribute="bottom" constant="14" id="gbx-PP-Fpx"/>
                             <constraint firstItem="q7g-lD-AkQ" firstAttribute="top" secondItem="dbc-xa-MTx" secondAttribute="bottom" constant="8" id="oZM-6v-b2Z"/>
                             <constraint firstItem="YFt-r6-tZf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oi1-cl-1I9"/>
+                            <constraint firstItem="vPu-06-46k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="81" id="pOE-1D-wxN"/>
                             <constraint firstItem="gGE-0x-kuS" firstAttribute="top" secondItem="YFt-r6-tZf" secondAttribute="bottom" constant="25" id="tjM-eN-yGz"/>
                             <constraint firstItem="z71-IU-HK9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uAQ-Pd-Hod"/>
                             <constraint firstItem="nw4-oq-fUk" firstAttribute="centerX" secondItem="gGE-0x-kuS" secondAttribute="centerX" id="ubR-At-MsC"/>
@@ -176,8 +192,21 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buyNowButton" destination="vPu-06-46k" id="PsU-0Z-DJb"/>
+                        <outlet property="imageLogo" destination="YFt-r6-tZf" id="sB6-z4-HUD"/>
+                        <outlet property="separator" destination="cQx-yi-FLN" id="hoF-5h-N62"/>
                         <outlet property="stateButton" destination="eku-Ld-fJq" id="k80-LM-5v2"/>
                         <outlet property="statePicker" destination="3l7-tf-6KF" id="5nN-v4-eUi"/>
+                        <outlet property="successImageView" destination="c0t-wQ-ojR" id="how-ZY-NgR"/>
+                        <outletCollection property="collection" destination="nw4-oq-fUk" collectionClass="NSMutableArray" id="BXI-bI-4ih"/>
+                        <outletCollection property="collection" destination="dbc-xa-MTx" collectionClass="NSMutableArray" id="JvZ-TS-ae8"/>
+                        <outletCollection property="collection" destination="21I-cO-eQ3" collectionClass="NSMutableArray" id="Hzc-I3-top"/>
+                        <outletCollection property="collection" destination="0Hf-ol-Efa" collectionClass="NSMutableArray" id="a85-KY-vuB"/>
+                        <outletCollection property="collection" destination="scP-B9-U5c" collectionClass="NSMutableArray" id="XVY-B2-D91"/>
+                        <outletCollection property="collection" destination="gGE-0x-kuS" collectionClass="NSMutableArray" id="Xu7-AH-mpI"/>
+                        <outletCollection property="buttons" destination="z71-IU-HK9" collectionClass="NSMutableArray" id="tzN-RX-d55"/>
+                        <outletCollection property="buttons" destination="ZE9-M4-lF7" collectionClass="NSMutableArray" id="bcg-mf-4EU"/>
+                        <outletCollection property="buttons" destination="q7g-lD-AkQ" collectionClass="NSMutableArray" id="MbP-Z7-U6h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -186,6 +215,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="buyNowBtn" width="225" height="45"/>
         <image name="miraclePillEmoji" width="90" height="90"/>
+        <image name="successIndicator" width="180" height="180"/>
     </resources>
 </document>
