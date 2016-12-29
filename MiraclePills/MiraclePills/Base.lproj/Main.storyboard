@@ -117,12 +117,15 @@
                                     <constraint firstAttribute="height" constant="15" id="iAM-cl-LZ6"/>
                                 </constraints>
                                 <state key="normal" title="Choose Your State"/>
+                                <connections>
+                                    <action selector="chooseStateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EsR-t5-8qu"/>
+                                </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3l7-tf-6KF">
-                                <rect key="frame" x="82" y="496" width="250" height="160"/>
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3l7-tf-6KF">
+                                <rect key="frame" x="20" y="496" width="374" height="220"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="9Gq-Cb-Rig"/>
-                                    <constraint firstAttribute="width" constant="250" id="at2-iP-CMs"/>
+                                    <constraint firstAttribute="height" constant="220" id="9Gq-Cb-Rig"/>
+                                    <constraint firstAttribute="width" constant="374" id="at2-iP-CMs"/>
                                 </constraints>
                             </pickerView>
                         </subviews>
@@ -145,6 +148,7 @@
                             <constraint firstItem="0Hf-ol-Efa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L2m-R1-RUF"/>
                             <constraint firstItem="dbc-xa-MTx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MpJ-im-kCS"/>
                             <constraint firstItem="dbc-xa-MTx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NZ2-UJ-ByT"/>
+                            <constraint firstItem="3l7-tf-6KF" firstAttribute="top" secondItem="eku-Ld-fJq" secondAttribute="bottom" constant="8" id="OOF-Vy-dRh"/>
                             <constraint firstItem="z71-IU-HK9" firstAttribute="top" secondItem="0Hf-ol-Efa" secondAttribute="bottom" constant="8" id="PfT-dI-GL4"/>
                             <constraint firstItem="nw4-oq-fUk" firstAttribute="top" secondItem="gGE-0x-kuS" secondAttribute="bottom" constant="8" id="RLu-OF-n4T"/>
                             <constraint firstItem="dbc-xa-MTx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VTw-74-lcK"/>
@@ -171,6 +175,10 @@
                             <constraint firstItem="3l7-tf-6KF" firstAttribute="top" secondItem="eku-Ld-fJq" secondAttribute="bottom" constant="8" id="znb-Rd-neh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stateButton" destination="eku-Ld-fJq" id="k80-LM-5v2"/>
+                        <outlet property="statePicker" destination="3l7-tf-6KF" id="5nN-v4-eUi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
