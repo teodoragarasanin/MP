@@ -15,6 +15,7 @@
 		E8FD2A781E169208001D5E8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8FD2A761E169208001D5E8A /* LaunchScreen.storyboard */; };
 		E8FD2A831E169208001D5E8A /* RetroCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FD2A821E169208001D5E8A /* RetroCalculatorTests.swift */; };
 		E8FD2A8E1E169208001D5E8A /* RetroCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FD2A8D1E169208001D5E8A /* RetroCalculatorUITests.swift */; };
+		E8FD2A9C1E17F860001D5E8A /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = E8FD2A9B1E17F860001D5E8A /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E8FD2A891E169208001D5E8A /* RetroCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8FD2A8D1E169208001D5E8A /* RetroCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroCalculatorUITests.swift; sourceTree = "<group>"; };
 		E8FD2A8F1E169209001D5E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8FD2A9B1E17F860001D5E8A /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				E8FD2A761E169208001D5E8A /* LaunchScreen.storyboard */,
 				E8FD2A791E169208001D5E8A /* Info.plist */,
 				E8FD2A711E169208001D5E8A /* RetroCalculator.xcdatamodeld */,
+				E8FD2A9B1E17F860001D5E8A /* btn.wav */,
 			);
 			path = RetroCalculator;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				E8FD2A781E169208001D5E8A /* LaunchScreen.storyboard in Resources */,
 				E8FD2A751E169208001D5E8A /* Assets.xcassets in Resources */,
 				E8FD2A701E169208001D5E8A /* Main.storyboard in Resources */,
+				E8FD2A9C1E17F860001D5E8A /* btn.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
