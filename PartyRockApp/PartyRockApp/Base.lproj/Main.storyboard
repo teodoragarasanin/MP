@@ -162,18 +162,35 @@
                                     <constraint firstAttribute="height" constant="220" id="JwE-aG-tgJ"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wud-Dh-pfS">
+                                <rect key="frame" x="16" y="290" width="343" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="VSc-9d-F1O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Wud-Dh-pfS" firstAttribute="leading" secondItem="Wkz-z2-o4v" secondAttribute="leadingMargin" id="EjJ-Cd-wF3"/>
+                            <constraint firstItem="Wud-Dh-pfS" firstAttribute="centerX" secondItem="Wkz-z2-o4v" secondAttribute="centerX" id="Rzh-ta-n76"/>
+                            <constraint firstItem="Wud-Dh-pfS" firstAttribute="top" secondItem="vO4-QF-JFD" secondAttribute="bottom" constant="70" id="cdZ-5p-s70"/>
                             <constraint firstItem="vO4-QF-JFD" firstAttribute="top" secondItem="Wkz-z2-o4v" secondAttribute="top" id="i2p-oW-7dN"/>
+                            <constraint firstItem="Wud-Dh-pfS" firstAttribute="trailing" secondItem="Wkz-z2-o4v" secondAttribute="trailingMargin" id="o1r-Dy-LrC"/>
                             <constraint firstItem="vO4-QF-JFD" firstAttribute="leading" secondItem="Wkz-z2-o4v" secondAttribute="leading" id="qJA-NA-f7z"/>
                             <constraint firstAttribute="trailing" secondItem="vO4-QF-JFD" secondAttribute="trailing" id="xZx-9l-DMg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="Wud-Dh-pfS" id="60O-sU-67A"/>
+                        <outlet property="webView" destination="vO4-QF-JFD" id="B9a-S7-yao"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F0w-mE-PmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="842" y="43"/>
+            <point key="canvasLocation" x="840.79999999999995" y="42.728635682158924"/>
         </scene>
     </scenes>
     <resources>
