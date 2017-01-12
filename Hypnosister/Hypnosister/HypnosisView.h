@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HypnosisView : UIView
+-(void)drawRect:(CGRect)rect;
 
 @end
