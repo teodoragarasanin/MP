@@ -1,0 +1,6 @@
+framework module TTAnimationButton {
+  umbrella header "TTAnimationButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

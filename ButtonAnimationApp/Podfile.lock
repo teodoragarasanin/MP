@@ -1,0 +1,12 @@
+PODS:
+  - TTAnimationButton (0.1.0)
+
+DEPENDENCIES:
+  - TTAnimationButton
+
+SPEC CHECKSUMS:
+  TTAnimationButton: 77d8f0770fba95926e05696c992fbba0eadf0f83
+
+PODFILE CHECKSUM: 5500d1fd69fd70eab5cc397f4914836558c03411
+
+COCOAPODS: 1.0.1
